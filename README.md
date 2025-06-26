@@ -1,2 +1,6 @@
-# vk_test
-# Wikipedia Search Autotests + Allure2  ## Запуск тестов и генерация отчёта  1. Установите JDK 11+, Maven, Chrome. 2. Запустите тесты:    mvn clean test 3. Для просмотра Allure-отчёта:    mvn allure:serve    (откроется браузер с отчётом)
+1. Скачайте и разархивируйте проект
+cd путь_до_разархивированной_папки/vk_tests
+2. Запустить все тесты: mvn clean test
+3. Чтобы запустить только класс SearchTests: mvn -Dtest=tests.SearchTests test
+4.Получить отчет Allure2: mvn allure:serve
+После этого откройте файл target/site/allure-maven/index.html в браузере.
